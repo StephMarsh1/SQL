@@ -1,0 +1,21 @@
+CREATE TABLE store (product_id INTEGER PRIMARY KEY, Name TEXT, Price INTEGER, Aisle INTEGER, Quantity INTEGER);
+INSERT INTO store VALUES 
+(1, "Milk Duds", .75, 2, 50);
+INSERT INTO store VALUES (2, "Twizzlers", .80, 2, 25);
+INSERT INTO store VALUES (3, "Crunch", .65, 3, 30);
+INSERT INTO store VALUES (4, "MilkyWay", .85, 4, 35);
+INSERT INTO store VALUES (5, "Reeses", 1.00, 5, 75);
+INSERT INTO store VALUES (6, "Starburst", .85, 5, 20);
+INSERT INTO store VALUES (7, "Kit Kat", .95, 3, 25);
+INSERT INTO store VALUES (8, "Almond Joy", 1.05, 1, 75);
+INSERT INTO store VALUES (9, "Hershey", 1.00, 1, 80);
+INSERT INTO store VALUES (10, "M & M's", .50, 1, 55);
+INSERT INTO store VALUES (11, "Snickers", 1.05, 3, 30);
+INSERT INTO store VALUES (12, "Twix", .75, 4, 20);
+INSERT INTO store VALUES (13, "Skittles", .75, 3, 25);
+INSERT INTO store VALUES (14, "3 Muskateers", .80, 5, 20);
+INSERT INTO store VALUES (15, "Baby Ruth", .95, 5, 50);
+
+SELECT * FROM store ORDER BY price;
+SELECT SUM(QUANTITY) FROM store ORDER BY price;
+
